@@ -1,0 +1,151 @@
+/* ALTERNATIVE PALETTE:
+#dbc3d0, #5e0231, #c7a693, #856046 
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+body {
+  box-sizing: border-box;
+  padding: 1rem; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    padding: 0 .5rem;
+    background-color: #EEE;
+    border: #CCC solid 1px;
+    border-radius: 3px;
+    color: #777;
+}
+
+.header__link-box {
+    width: 40%;
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header__link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.header__link--strong {
+    font-weight: bold;
+}
+
+.header__control-box {
+    width: 45%;
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__control {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header__link:hover, 
+.header__control:hover {
+    background-color: #CCC;
+}
+
+.quickstart {
+    padding: 1rem;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.portfolio {
+    padding: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+}
+
+.portfolio__item-box {
+    max-width: 240px;
+    min-width: 200px;
+    width: 30%;
+    border: #CCC solid 1px;
+    border-radius: 3px;
+}
+
+.portfolio__item-header {
+    width: 100%;
+    padding: 3px .5rem;
+}
+
+.portfolio__item-header--brown {
+    background-color: #c7a693; /* #dbc3d0, #5e0231, #c7a693, #856046, */
+    color: #5e0231;
+}
+
+.portfolio__item-header--blue {
+    background-color: #dbc3d0;
+    color: #856046;
+}
+
+.portfolio__price-description {
+    font-size: 60%;
+}
+
+.portfolio__input-box {
+    padding: .5rem;
+}
+
+.portfolio__input {
+    height: 30px;
+    width: calc(100% - .5rem - 48px);
+}
+
+.btn {
+    display: inline-block;
+    height: 32px;
+    width: 48px;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.btn--brown {
+    background-color: #5e0231;
+}
+
+.btn--blue {
+    background-color: #856046;
+}
